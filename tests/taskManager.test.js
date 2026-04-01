@@ -49,3 +49,7 @@ describe('validateTitle', () => {
     expect(validateTitle('  abc  ')).toBe(true);
   });
 });
+
+it('deve retornar false para string numéricas', () => {
+  expect(validateTitle('123')).toBe(false);
+});
